@@ -13,9 +13,10 @@
  <%= f.collection_select :genre_id, Genre.all, :id, :name %>
 
   <br />
-   <input name="song[note_contents][]" id="song_notes_1">
-  <input name="song[note_contents][]" id="song_notes_2">
-  <input type="submit" value="Submit">
+     <%= f.label :notes %><br>
+  <%= f.text_field :note_contents, name: "song[note_contents][]", id: "song_notes_1" %><br>
+  <%= f.text_field :note_contents, name: "song[note_contents][]", id: "song_notes_2" %><br>
+
 
 
   <%= f.submit %>

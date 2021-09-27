@@ -30,7 +30,5 @@ def note_contents
   notes.map(&:content)
 end
 
-
-
  
 end
